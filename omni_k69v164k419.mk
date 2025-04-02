@@ -10,7 +10,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common TWRP stuff.
-$(call inherit-product, vendor/TWRP/config/common.mk)
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit from k69v164k419 device
 $(call inherit-product, device/zyb/k69v164k419/device.mk)
