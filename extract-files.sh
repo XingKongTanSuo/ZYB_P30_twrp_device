@@ -8,7 +8,7 @@
 
 set -e
 
-DEVICE=k69v1_64_k419
+DEVICE=k69v164k419
 VENDOR=zyb
 
 # Load extract_utils and do some sanity checks

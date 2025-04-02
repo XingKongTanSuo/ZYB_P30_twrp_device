@@ -12,11 +12,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
 
-# Inherit from k69v1_64_k419 device
-$(call inherit-product, device/zyb/k69v1_64_k419/device.mk)
+# Inherit from k69v164k419 device
+$(call inherit-product, device/zyb/k69v164k419/device.mk)
 
-PRODUCT_DEVICE := k69v1_64_k419
-PRODUCT_NAME := omni_k69v1_64_k419
+PRODUCT_DEVICE := k69v164k419
+PRODUCT_NAME := omni_k69v164k419
 PRODUCT_BRAND := ZYB
 PRODUCT_MODEL := ZPD1203
 PRODUCT_MANUFACTURER := zyb
@@ -24,6 +24,6 @@ PRODUCT_MANUFACTURER := zyb
 PRODUCT_GMS_CLIENTID_BASE := android-zyb
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="full_k69v1_64_k419-user 12 SP1A.210812.016 730_731_732-26 release-keys"
+    PRIVATE_BUILD_DESC="full_k69v164k419-user 12 SP1A.210812.016 730_731_732-26 release-keys"
 
-BUILD_FINGERPRINT := ZYB/full_k69v1_64_k419/k69v1_64_k419:12/SP1A.210812.016/730_731_732-26:user/release-keys
+BUILD_FINGERPRINT := ZYB/full_k69v164k419/k69v164k419:12/SP1A.210812.016/730_731_732-26:user/release-keys

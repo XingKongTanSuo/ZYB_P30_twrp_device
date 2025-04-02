@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_k69v1_64_k419.mk
+    $(LOCAL_DIR)/omni_k69v164k419.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_k69v1_64_k419-user \
-    omni_k69v1_64_k419-userdebug \
-    omni_k69v1_64_k419-eng
+    omni_k69v164k419-user \
+    omni_k69v164k419-userdebug \
+    omni_k69v164k419-eng
