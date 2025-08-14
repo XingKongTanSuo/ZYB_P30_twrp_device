@@ -30,7 +30,7 @@ PRODUCT_PACKAGES += \
     fastbootd
 
 # Shipping API level
-PRODUCT_SHIPPING_API_LEVEL := 30
+PRODUCT_SHIPPING_API_LEVEL := 31
 
 # Keystore
 PRODUCT_PACKAGES += \
