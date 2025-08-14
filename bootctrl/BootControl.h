@@ -16,7 +16,7 @@
 
 #pragma once
 
-#include <android/hardware/boot/1.1/IBootControl.h>
+#include <android/hardware/boot/1.2/IBootControl.h>
 #include <hidl/MQDescriptor.h>
 #include <hidl/Status.h>
 #include <libboot_control/libboot_control.h>
@@ -31,8 +31,8 @@ namespace implementation {
 using ::android::hardware::Return;
 using ::android::hardware::Void;
 using ::android::hardware::boot::V1_0::BoolResult;
-using ::android::hardware::boot::V1_1::IBootControl;
-using ::android::hardware::boot::V1_1::MergeStatus;
+using ::android::hardware::boot::V1_2::IBootControl;
+using ::android::hardware::boot::V1_2::MergeStatus;
 
 class BootControl : public IBootControl {
   public:
