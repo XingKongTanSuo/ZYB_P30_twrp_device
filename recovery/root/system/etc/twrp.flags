@@ -3,13 +3,15 @@
 
 # mount point    fstype           device                    device2                flags
 
-# Logical partitions
-system            /system                 auto                        display="System"logical
-vendor            /vendor                 auto                        display="Vendor";logical
-product           /product                auto                        display="Product";logical
+# Super Partitions
+/system_a           ext4       /dev/block/mapper/system_a                                 flags=backup=1;flashimg=1;slotselect;display="System Image A"
+/vendor_a           ext4       /dev/block/mapper/vendor_a                                 flags=backup=1;flashimg=1;slotselect;display="Vendor Image A"
+/product_a          ext4       /dev/block/mapper/product_a                                flags=backup=1;flashimg=1;slotselect;display="Product Image A"
+/system_ext_a       ext4       /dev/block/mapper/system_ext_a                             flags=backup=1;flashimg=1;slotselect;display="System_EXT Image A"
 
 # Common partition
 /boot             emmc    /dev/block/by-name/boot                     flags=backup=1;display="Boot";flashimg=1
+/vendor_boot      emmc    /dev/block/by-name/vendor_boot              flags=display="Vendor Boot";flashimg=1;backup=1;slotselect
 /cache            ext4    /dev/block/by-name/cache                    flags=backup=1;display="Cache";wipeingui;wipeduringfactoryreset
 /dtbo             emmc    /dev/block/by-name/dtbo                     flags=backup=1;display="Dtbo"
 /persist          ext4    /dev/block/by-name/persist                  flags=display="Persist";backup=1
