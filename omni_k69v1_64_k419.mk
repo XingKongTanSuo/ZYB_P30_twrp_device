@@ -23,7 +23,19 @@ PRODUCT_MANUFACTURER := zyb
 
 PRODUCT_GMS_CLIENTID_BASE := android-zyb
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="full_k69v1_64_k419-user 12 SP1A.210812.016 730_731_732-26 release-keys"
 
-BUILD_FINGERPRINT := ZYB/full_k69v1_64_k419/k69v1_64_k419:12/SP1A.210812.016/730_731_732-26:user/release-keys
+# fastbootd
+PRODUCT_PACKAGES += \
+    android.hardware.fastboot@1.0-impl-mock \
+    fastbootd
+
+# Shipping API level
+PRODUCT_SHIPPING_API_LEVEL := 29
+
+# Keystore
+PRODUCT_PACKAGES += \
+    android.system.keystore2
+
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.1
