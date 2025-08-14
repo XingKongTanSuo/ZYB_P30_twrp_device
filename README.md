@@ -1,4 +1,4 @@
-# Android device tree for ZYB ZPD1203 (k69v1_64_k419)
+# TWRP device tree for ZYB ZPD1203 (k69v1_64_k419)
 
 ```
 #
