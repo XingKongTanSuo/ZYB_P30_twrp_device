@@ -157,3 +157,7 @@ TW_INCLUDE_REPACKTOOLS := true
 # Debug
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
+
+# SeLinux
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += device/zyb/k69v1_64_k419/sepolicy/public
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += device/zyb//k69v1_64_k419/private
