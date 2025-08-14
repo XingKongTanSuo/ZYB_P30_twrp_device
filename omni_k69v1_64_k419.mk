@@ -24,9 +24,10 @@ PRODUCT_MANUFACTURER := zyb
 PRODUCT_GMS_CLIENTID_BASE := android-zyb
 
 
-# fastbootd
+# Fastbootd
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
+    android.hardware.fastboot@1.0-impl-mock.recovery \
     fastbootd
 
 # Shipping API level
