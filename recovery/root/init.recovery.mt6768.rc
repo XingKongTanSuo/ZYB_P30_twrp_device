@@ -37,20 +37,25 @@ service keymaster-4-1 /vendor/bin/android.hardware.keymaster@4.1-service
     
 on property:crypto.ready=1
     start keymaster-4-1
+    start gatekeeper-1-0
 
 on property:crypto.ready=0
     stop mobicore
     stop keymaster-4-1
+    stop gatekeeper-1-0
 
 on property:ro.crypto.state=unsupported
     stop mobicore
     stop keymaster-4-1
+    stop gatekeeper-1-0
 
 on property:ro.crypto.state=unencrypted
     stop mobicore
     stop keymaster-4-1
+    stop gatekeeper-1-0
 
 on property:twrp.decrypt.done=true && property:twrp.all.users.decrypted=true
     stop mobicore
     stop keymaster-4-1
+    stop gatekeeper-1-0
     
