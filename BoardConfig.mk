@@ -93,7 +93,6 @@ TARGET_BOARD_PLATFORM := mt6768
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 TARGET_USERIMAGES_USE_EXT4 := true
-TARGET_USERIMAGES_USE_F2FS := true
 
 # Security patch level
 VENDOR_SECURITY_PATCH := 2024-07-05
@@ -134,7 +133,6 @@ TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_DEFAULT_LANGUAGE := zh_CN
-TW_INCLUDE_NTFS_3G := true
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 
 # Crypto
@@ -154,4 +152,3 @@ TW_INCLUDE_REPACKTOOLS := true
 
 # Debug
 TWRP_INCLUDE_LOGCAT := true
-TARGET_USES_LOGD := true
