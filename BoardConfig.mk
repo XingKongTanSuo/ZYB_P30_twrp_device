@@ -145,6 +145,9 @@ TW_FORCE_KEYMASTER_VER := true
 # VNDK
 BOARD_VNDK_VERSION := current
 
+# Modules
+TW_LOAD_VENDOR_BOOT_MODULES := true
+
 # resetprop and magiskboot
 TW_INCLUDE_RESETPROP := true
 TW_INCLUDE_REPACKTOOLS := true
